@@ -16,7 +16,7 @@ class PostmanEchoTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("headers.x-forwarded-port", equalTo("447"))
+                .body("headers.x-forwarded-port", equalTo("443"))
         ;
     }
 }
